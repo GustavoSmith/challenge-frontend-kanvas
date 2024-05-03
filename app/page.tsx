@@ -63,6 +63,7 @@ export default function Home() {
             <button
               className="size-7 rounded bg-kanvas-blue/20 text-white peer-focus:bg-kanvas-blue"
               type="submit"
+              aria-label="Submit email address"
             >
               {/* Button icon */}
               <svg
@@ -83,17 +84,19 @@ export default function Home() {
             </button>
           </div>
         </form>
-        <p className="pb-24 pl-[11%] font-sans text-lg/6 font-bold md:text-2xl/7 lg:pl-28">
-          +1-855-<span className="text-kanvas-blue">KANVAS</span>
-        </p>
-        <footer className="pl-[11%] font-sans text-sm text-[#B3B3B3] max-2xl:pb-[30px] md:pb-[35px] lg:pl-28">
-          © 2024 Kanvas.co
+        <footer className="flex flex-col justify-between gap-20 md:max-xl:gap-48">
+          <p className="pl-[11%] font-sans text-lg/6 font-bold md:text-2xl/7 lg:pl-28">
+            +1-855-<span className="text-kanvas-blue">KANVAS</span>
+          </p>
+          <p className="mb-0 mt-auto pl-[11%] font-sans text-sm text-[#B3B3B3] md:pb-[35px]">
+            © 2024 Kanvas.co
+          </p>
         </footer>
       </section>
       <div className="w-full 2xl:flex 2xl:max-h-screen 2xl:grow 2xl:py-5 2xl:pr-5">
         <Image
           src={poolImage}
-          alt="A picture of a pool, view from above."
+          alt="A photo of a pool, view from above."
           className="-top-10 h-auto rounded-xl max-2xl:absolute max-2xl:-right-16 max-2xl:w-[40%] max-2xl:-rotate-[6deg] min-[450px]:max-2xl:-top-[12%] 2xl:max-h-fit 2xl:grow"
           priority
         />
