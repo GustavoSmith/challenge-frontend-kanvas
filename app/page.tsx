@@ -93,13 +93,14 @@ export default function Home() {
           </p>
         </footer>
       </section>
-      <div className="w-full 2xl:flex 2xl:max-h-screen 2xl:grow 2xl:py-5 2xl:pr-5">
+      <div className="w-full  2xl:flex 2xl:max-h-screen 2xl:grow  2xl:py-5 2xl:pr-5">
         <Image
           src={poolImage}
           alt="A photo of a pool, view from above."
-          className="-top-10 h-auto rounded-xl max-2xl:absolute max-2xl:-right-16 max-2xl:w-[40%] max-2xl:-rotate-[6deg] min-[450px]:max-2xl:-top-[12%] 2xl:max-h-fit 2xl:grow"
+          className="-top-10 h-auto rounded-xl max-2xl:absolute max-2xl:-right-16 max-2xl:w-[40%] max-2xl:-rotate-[6deg] min-[450px]:max-2xl:-top-[12%] 2xl:hidden 2xl:max-h-fit 2xl:grow"
           priority
         />
+        <div className="w-full rounded-lg bg-pool bg-cover bg-center bg-no-repeat max-2xl:hidden" />
       </div>
     </main>
   );
